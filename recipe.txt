@@ -1,0 +1,40 @@
+$ cd veggie-favorites
+
+$ git add chili.txt squash-lasagna.txt
+
+$ cd ../veggie-clone
+
+$ git fetch
+remote: Counting objects: 9, done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 9 (delta 5), reused 0 (delta 0)
+Unpacking objects: 100% (9/9), done.
+From /home/ccuser/workspace/recipe-book-a/veggie-favorites
+ * [new branch]      master     -> origin/master
+
+$ git merge origin/master
+Updating 4681ee4..0791520
+Fast-forward
+ chili.txt          | 14 +++++++-------
+ margherita.txt     | 11 +++++++----
+ squash-lasagna.txt |  3 ++-
+ 3 files changed, 16 insertions(+), 12 deletions(-)
+
+  $ git branch dish
+$ git checkout dish
+Switched to branch 'dish'
+
+$ git add new-recipe.txt
+
+$ git fetch
+
+$ git push origin dish
+Total 0 (delta 0), reused 0 (delta 0)
+To /home/ccuser/workspace/recipe-book-a/veggie-favorites
+ * [new branch]      dish -> dish
+
+ $ cd ../veggie-favorites
+
+ $ git branch
+  dish
+* master
